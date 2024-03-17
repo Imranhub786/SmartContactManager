@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="/normal/base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  .feature-section {
+    padding: 50px 0; /* Adjust padding as needed */
+  }
+  .feature-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+</style>
+</head>
+<body>
+<section class="banner d-flex justify-content-center align-items-center" style="background-color: #f0f9ff;">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2 style="color: #2196F3;">About Smart Contact Manager</h2>
+        <p>
+          <span class="marquee" style="color:#2196F3">Welcome to the Smart Contact Manager dashboard. Our platform provides an efficient solution for managing your contacts, tasks, and interactions seamlessly.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Key Features:</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature-box">
+          <h4>Contact Management</h4>
+          <p>Easily manage your contacts, including adding, editing, and deleting contacts.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <h4>Task Management</h4>
+          <p>Organize your tasks, set deadlines, and keep track of your progress.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <h4>Interaction Tracking</h4>
+          <p>Record interactions with your contacts, such as calls, emails, and meetings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

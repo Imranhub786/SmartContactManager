@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::Layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<section class="banner justify-content-center align-items-center"
+		style="display: flex; flex-direction: column;">
+		<div class="text-center">
+			<h1 class="font-weight-bold text-center" style="color: #2196F3;">Smart
+				Contact Manager</h1>
+			<p class="text-center" style="color: #2196F3;">Start collecting your
+				contacts in a very smarter way. We provide a very efficient and
+				smarter way of handling contacts.</p>
+
+			<style>
+/* Responsive adjustments (optional) */
+@media ( max-width : 768px) {
+	h1 {
+		font-size: 1.5rem; /* Adjust font size for smaller screens */
+	}
+	p {
+		font-size: 1rem; /* Adjust font size for smaller screens */
+	}
+}
+</style>
+
+
+			<a th:href="@{/user/dashboard}"><button
+					class=" btn btn-lg bg-primary text-white">Click Here</button></a>
+		</div>
+
+		<div class="home-testimonial">
+			<div class="container-fluid">
+				<div class="row d-flex justify-content-center testimonial-pos">
+					<div class="col-md-12 pt-4 d-flex justify-content-center">
+						<h3>Testimonials</h3>
+					</div>
+					<div class="col-md-12 d-flex justify-content-center">
+						<h2>Explore the students experience</h2>
+					</div>
+				</div>
+				<div class="home-testimonial-bottom">
+					<div class="container testimonial-inner">
+						<div class="row d-flex justify-content-center">
+							<div class="col-md-4 style-3">
+								<div class="tour-item ">
+									<div class="tour-desc bg-white">
+										<div class="tour-text color-grey-3 text-center">&ldquo;It's
+											help me store my contact details.I can get my contact on any
+											device by just login.&rdquo;</div>
+										<div class="d-flex justify-content-center pt-2 pb-2">
+											<img class="tm-people"
+												src="https://cdn.aglty.io/boys-town/quotes/ryan_20230915120925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+												alt="">
+										</div>
+										<div class="link-name d-flex justify-content-center">Imran
+											Hussain</div>
+										<div class="link-position d-flex justify-content-center">Student</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 style-3">
+								<div class="tour-item ">
+									<div class="tour-desc bg-white">
+										<div class="tour-text color-grey-3 text-center">&ldquo;By
+											using this web app our friend group just take anyone contact
+											details who has added by the teamates.&rdquo;</div>
+										<div class="d-flex justify-content-center pt-2 pb-2">
+											<img class="tm-people"
+												src="https://www.mpl.live/blog/wp-content/uploads/2023/02/19s-7.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+												alt="">
+										</div>
+										<div class="link-name d-flex justify-content-center">Shivam
+											Yadav</div>
+										<div class="link-position d-flex justify-content-center">Student</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 style-3">
+								<div class="tour-item ">
+									<div class="tour-desc bg-white">
+										<div class="tour-text color-grey-3 text-center">&ldquo;I
+											will give it 5 star rating because it is very helpful for me
+											and my family.&rdquo;</div>
+										<div class="d-flex justify-content-center pt-2 pb-2">
+											<img class="tm-people"
+												src="https://e0.pxfuel.com/wallpapers/760/1016/desktop-wallpaper-best-fukushi-sota-japanese-men-japanese-boy-j-star.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+												alt="">
+										</div>
+										<div class="link-name d-flex justify-content-center">Shadikul
+											Islam</div>
+										<div class="link-position d-flex justify-content-center">Student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</section>
+
+</body>
+</html>
